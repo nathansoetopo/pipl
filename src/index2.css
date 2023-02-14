@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    /* -ms-overflow-style: none; IE and Edge */
+    /* scrollbar-width: none; Firefox */
+  }
+  .h-fixed{
+    position: fixed;
+    padding-top: 50px;
+  }
+  .h-sidebar{
+    background:url(/themes/images/sidebar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px 0 0;
+    border: 0;
+  }
+  .nav-link{
+    background-color: transparent !important;
+    fill: #fff !important;
+    /* padding-top: 30px !important;
+    padding-bottom: 30px !important; */
+  }
+  .nav-link.active{
+  
+    /* background-color: #fff !important; */
+    fill: #EB4886 !important;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius:50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .ml-auto{
+    margin-left: auto;
+  }
+  .nav-link.active{
+    background:url(/themes/images/ellipse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 13px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .text-\[\#126CFF\]{
+    color: #11263C !important;
+  }
+  .shadow{
+    background: #FFFFFF;
+    box-shadow: 4px 8px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .bg-red-200{
+    box-shadow: 4px 8px 40px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF !important;
+border-radius: 20px !important;
+  }
+  .bg-red-500 {
+    background-color: #B3261E !important;
+border-radius: 10px;
+}
+  button:focus-visible {
+    @apply outline-none;
+  }
+
+  mark {
+    @apply text-transparent;
+  }
+
+  mark > * {
+    @apply text-transparent inline;
+  }
+}
+
+@layer components {
+  .ck-editor__editable_inline {
+    height: 300px !important;
+  }
+
+  #\:rh\:-tabpanel-0
+    > div
+    > div.flex.flex-row.justify-between.my-10
+    > div.flex.flex-row.items-center.gap-3
+    > div
+    > div.react-datepicker__tab-loop
+    > div.react-datepicker-popper {
+    @apply z-[12];
+  }
+
+  #\:rh\:-tabpanel-2
+    > div
+    > div.flex.flex-row.gap-4
+    > div.flex.flex-col.grow.w-\[55\%\]
+    > div.ck.ck-reset.ck-editor.ck-rounded-corners
+    > div.ck.ck-editor__main
+    > div {
+    @apply h-[330px] rounded-b-lg;
+  }
+
+  .nav-link {
+    @apply flex flex-col fill-[#5271FF] bg-white hover:bg-[#5271FF] hover:fill-white transition-all rounded-r-lg;
+  }
+  .nav-link.active {
+    @apply fill-white bg-[#5271FF] transition-all;
+  }
+
+  .shadow-box {
+    @apply shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px];
+  }
+
+  .apexcharts-toolbar {
+    @apply bg-blue-400;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    @apply hidden;
+  }
+}

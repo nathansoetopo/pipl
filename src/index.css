@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    /* -ms-overflow-style: none; IE and Edge */
+    /* scrollbar-width: none; Firefox */
+  }
+  .App {
+    background-color: white;
+  }
+  
+  .Auth-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .Auth-form {
+    width: 420px;
+    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .Auth-form-content {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  
+  .Auth-form-title {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: 800;
+  }
+  .Auth-form .form-control{
+    width: 100%;
+  }
+  .btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: #1c84c6;
+    border-color: #1c84c6;
+    color: #fff;
+  }
+  .filter-btn{
+    border: 2px solid #B755A7;
+    border-radius: 50px;
+    padding: 10px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+  }
+  
+  .h-fixed{
+    position: fixed;
+    padding-top: 0px;
+  }
+  .h-sidebar{
+    background:url(/themes/images/sidebar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 0 0;
+    border: 0;
+  }
+  .nav-link{
+    background-color: transparent !important;
+    fill: #fff !important;
+    /* padding-top: 30px !important;
+    padding-bottom: 30px !important; */
+  }
+  .nav-link.active{
+  
+    /* background-color: #fff !important; */
+    fill: #EB4886 !important;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius:50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .ml-auto{
+    margin-left: auto;
+  }
+  .nav-link.active{
+    background:url(/themes/images/ellipse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 3px;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+  .text-\[\#126CFF\]{
+    color: #11263C !important;
+  }
+  .shadow{
+    background: #FFFFFF;
+    box-shadow: 4px 8px 40px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .h-screen{
+    overflow: hidden;
+  }
+
+  .bg-red-200{
+    box-shadow: 4px 8px 40px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF !important;
+  border-radius: 20px !important;
+  padding: 15px;
+    }
+    .bg-red-500 {
+      background-color: #B3261E !important;
+  border-radius: 10px;
+  }
+  .font-bold {
+    font-weight: 600 !important;
+  }
+  .table-auto tr:first-child{
+    --tw-border-spacing-x: 0.5rem;
+      --tw-border-spacing-y: 0.5rem;
+      border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
+  }
+  .bg-126CFF{
+  border: 1px solid #3ECE94;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.3));
+  border-radius: 9px;
+  color: #3ECE94 !important;
+  }
+  .bg-4A4A4A{
+    background: #F8F8F8;
+  border-radius: 9px;
+  color: #000 !important;
+  }
+  .bg-5271FF{
+    background: rgb(235,74,135);
+    background: linear-gradient(90deg, rgba(235,74,135,1) 0%, rgba(182,87,159,1) 100%);
+  }
+  .bg-5271FF:nth-child(2){
+    background: rgb(132,94,184);
+    background: linear-gradient(90deg, rgba(132,94,184,1) 0%, rgba(95,75,186,1) 100%);
+  }
+  .bg-5271FF:nth-child(3){
+    background: rgb(71,196,243);
+    background: linear-gradient(90deg, rgba(71,196,243,1) 0%, rgba(101,147,220,1) 100%);
+  }
+  .bg-5271FF:nth-child(4){
+    background: rgb(254,186,47);
+    background: linear-gradient(90deg, rgba(254,186,47,1) 0%, rgba(245,129,89,1) 100%);
+  }
+  .bg-5271FF span:first-child{
+    margin-bottom: 15px;
+    font-weight: normal;
+  }
+  .bg-5271FF span:nth-child(2) span{
+    font-weight: bold;
+  }
+  .gap-y-14 {
+    row-gap: 2rem !important;
+  }
+  .w-fit{
+    /* width: initial; */
+  }
+  .fill-\[\#9C9C9C\] {
+    fill: #EB4786 !important;
+  }
+  .btn-add{
+    color: #B755A7 !important;
+    border: 1px solid #B755A7 !important;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+  border-radius: 40px;
+  background-color: #fff !important;
+  }
+  .outline-pink{
+    border: 1px solid #B755A7 !important;
+  }
+  button:focus-visible {
+    @apply outline-none;
+  }
+
+  mark {
+    @apply text-transparent;
+  }
+
+  mark > * {
+    @apply text-transparent inline;
+  }
+}
+
+@layer components {
+  .ck-editor__editable_inline {
+    height: 300px !important;
+  }
+
+  #\:rh\:-tabpanel-0
+    > div
+    > div.flex.flex-row.justify-between.my-10
+    > div.flex.flex-row.items-center.gap-3
+    > div
+    > div.react-datepicker__tab-loop
+    > div.react-datepicker-popper {
+    @apply z-[12];
+  }
+
+  #\:rh\:-tabpanel-2
+    > div
+    > div.flex.flex-row.gap-4
+    > div.flex.flex-col.grow.w-\[55\%\]
+    > div.ck.ck-reset.ck-editor.ck-rounded-corners
+    > div.ck.ck-editor__main
+    > div {
+    @apply h-[330px] rounded-b-lg;
+  }
+
+  .nav-link {
+    @apply flex flex-col fill-[#5271FF] bg-white hover:bg-[#5271FF] hover:fill-white transition-all rounded-r-lg;
+  }
+  .nav-link.active {
+    @apply fill-white bg-[#5271FF] transition-all;
+  }
+
+  .shadow-box {
+    @apply shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px];
+  }
+
+  .apexcharts-toolbar {
+    @apply bg-blue-400;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    @apply hidden;
+  }
+}
